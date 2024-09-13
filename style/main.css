@@ -1,5 +1,9 @@
 html {
   box-sizing: border-box;
+  --prim-color: hsl(30, 59%, 26%);
+  --light-color:  hsl(0, 0%, 100%);
+  --title-color:  linear-gradient(var(--prim-color), black);
+  --hover-color: hsl(100, 50%, 25%);
 }
 
 *{
@@ -8,11 +12,46 @@ html {
   box-sizing: inherit;
 }
 .container {
-  border: 1px solid black;
-  width: 64vw;
+  width: 80vw;
   margin: 15px auto;
+  padding: 10px;
 }
 
-.img-hero{
-  width: 100%;
+/* .img-hero{
+   width: 250px; 
+} */
+
+.title {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  color: var(--title-color);
+}
+
+.cards-container{
+  list-style: none;
+}
+
+.card{
+  display: inline-block;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  
+
+  text-align: center;
+  background-image: linear-gradient(var(--prim-color), var(--light-color));
+  padding: 1em;
+
+}
+
+.card a {
+  color: var(--title-color);
+  text-decoration: none; 
+  display: inline-block;
+  margin-top: 0.2em;
+
+}
+
+.card:hover {
+  outline: 0.2px solid black;
+  color: var(--hover-color);
 }

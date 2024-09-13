@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   --prim-color: hsl(30, 59%, 26%);
   --light-color:  hsl(0, 0%, 100%);
-  --title-color:  linear-gradient(var(--prim-color), black);
+  --text-color:  linear-gradient(var(--prim-color), black);
   --hover-color: hsl(100, 50%, 25%);
 }
 
@@ -12,19 +12,20 @@ html {
   box-sizing: inherit;
 }
 .container {
-  width: 80vw;
+  width: 60vw;
   margin: 15px auto;
   padding: 10px;
 }
 
-/* .img-hero{
-   width: 250px; 
-} */
+.container .nav {
+  background-image: linear-gradient(0,var(--light-color)1%, var(--prim-color));
+  margin-bottom: 1em;
+}
 
 .title {
   margin-bottom: 0.5em;
   margin-top: 0.5em;
-  color: var(--title-color);
+  color: var(--text-colo);
 }
 
 .cards-container{
@@ -44,7 +45,7 @@ html {
 }
 
 .card a {
-  color: var(--title-color);
+  color: var(--text-color);
   text-decoration: none; 
   display: inline-block;
   margin-top: 0.2em;
@@ -55,3 +56,55 @@ html {
   outline: 0.2px solid black;
   color: var(--hover-color);
 }
+
+footer {
+  background-image: linear-gradient(0,var(--prim-color)1%, var(--light-color));
+  color: var(--text-color);
+  margin-top: 1em;
+  
+}
+.footer-about, .footer-address, .footer-contact {
+  padding: 1em;
+}
+
+.footer-about {
+  display: inline-block;
+  margin: 0 2em 2em 0;
+  width: 30%;
+  vertical-align:top;
+}
+.footer-about p {
+  display: inline;
+}
+
+.footer-address {
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 2em;
+  vertical-align:top;
+  width: 30%;
+}
+
+.footer-contact {
+  display: inline-block;
+  text-align: left;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  width: 30%;
+}
+.footer-contact address {
+  display: inline-block;
+  margin-right: 2em;
+  
+}
+
+.footer-contact a {
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5em;
+  text-align: left;
+}
+
+
+

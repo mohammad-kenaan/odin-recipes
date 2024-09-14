@@ -12,16 +12,14 @@
 
 <body>
 
-  <div class="container">
-    <div class="nav">
+  <header>
     <a href="./">
       <img src="./assets/images/chef-odin-180w.png" alt="odin logo" height="79">
     </a>
-  </div>
-   
-
+  </header>
+  <div class="container">
     <img srcset="./assets/images/hero-image-360w.webp 360w,
-              ./assets/images/hero-image-750w.webp 750w" sizes="(max-width: 780px) 360px, 750px"
+              ./assets/images/hero-image-750w.webp 750w" sizes="(max-width: 400px) 360px, 750px"
       src="./assets/images/hero-image-750w.webp" alt="A steak is cooking in a skillet on a wooden table" height="500px"
       class="img-hero">
 
@@ -29,18 +27,12 @@
 
     <ul class="cards-container">
       <li class="card">
-
-        <img src="./assets/images/chicken-rice-360w.webp" height="150" alt="Lemon Chicken rice">
-        <h2><a href="./recipes/lemon-chicken-and-rice-casserole/">Lemon Chicken and Rice Casserole</a>
-        </h2>
-      </li>
-
-      <li class="card">
-
         <img src="./assets/images/tartufo-360w.webp" height="150" alt="Tartufo">
         <h2>
-          <a href="./recipes/tartufo/">Tartufo</a>
+           <a href="./recipes/tartufo/">Tartufo</a>
         </h2>
+        <p>Tartufo is a classic Italian dessert that you can make at home. It requires some patience as there is freezing time involved. Rolling. in pistachio and cookie crumbs is extra delicious.</p>
+        <button> <a href="./recipes/tartufo/">Read More</a></button>
       </li>
 
       <li class="card">
@@ -48,38 +40,48 @@
         <img src="./assets/images/r-avocado-360w.webp" height="150" alt="Capress Stuffed Avocado">
         <h2><a href="./recipes/caprese-stuffed-avocado/">Capress Stuffed Avocado</a>
         </h2>
+        <p>This Caprese stuffed avocado salad is made up of avocado halves, filled with a simple Caprese salad using cherry tomatoes, mozzarella pearls, and basil, and drizzled with balsamic vinegar.</p>
+        <button><a href="./recipes/caprese-stuffed-avocado/">Read More</a></button>
       </li>
+
+      <li class="card">
+        <img src="./assets/images/chicken-rice-360w.webp" height="150" alt="Lemon Chicken rice">
+        <h2><a href="./recipes/lemon-chicken-and-rice-casserole/">Lemon Chicken and Rice Casserole</a>
+        </h2>
+        <p>Casseroles never disappoint. They are filling, hearty, and can last you several meals if you’re cooking for yourself or a few others.</p>
+        <button><a href="./recipes/lemon-chicken-and-rice-casserole/">Read More</a></button>
+      </li>
+
     </ul>
-
-    <footer>
-      <div class="footer-about">
-
-        <p><cite>
-            Recipes Website
-          </cite> made it by MH'D </p>
-
-      </div>
-
-      <div class="footer-address">
-        <p>address:</p>
-        <address>2702 - 7895 Jane street Zahle, Lebanon </address>
-      </div>
-
-      <div class="footer-contact">
-        <p>Contact us:</p>
-        <address>
-          <a href="mailto:kenaan.odin@outlook.com">kenaan.odin@outlook.com</a>
-          <a href="tel:+1 (123) 000-1212">tel:+1 (123) 000-1212</a>
-          <img src="./assets/images/facebook-app-symbol.png" height="24db" alt="">
-          <img src="./assets/images/instagram.png" alt="" height="24db">
-        </address>
-      </div>
-
-
-
-    </footer>
-
   </div>
+
+
+  <footer>
+    <div class="footer-about">
+
+      <p><cite>
+          Recipes Website
+        </cite> made it by MH'D </p>
+        <p class="copy-right">© 2024 Odin Recipes. All rights reserved.</p>
+
+    </div>
+
+    <div class="footer-address">
+      <p>address:</p>
+      <address>2702 - 7895 Jane street Zahle, Lebanon </address>
+    
+    </div>
+
+    <div class="footer-contact">
+      <p>Contact us:</p>
+      <address>
+        <a href="mailto:kenaan.odin@outlook.com">kenaan.odin@outlook.com</a>
+        <a href="tel:+1 (123) 000-1212">tel:+1 (123) 000-1212</a>
+        <img src="./assets/images/facebook-app-symbol.png" height="24db" alt="">
+        <img src="./assets/images/instagram.png" alt="" height="24db">
+      </address>
+    </div>
+  </footer>
 </body>
 
 </html>

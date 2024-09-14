@@ -1,9 +1,10 @@
 html {
   box-sizing: border-box;
-  --prim-color: hsl(30, 59%, 26%);
+  --prim-color: hsl(192, 24%, 96%);
   --light-color:  hsl(0, 0%, 100%);
   --text-color:  linear-gradient(var(--prim-color), black);
-  --hover-color: hsl(100, 50%, 25%);
+  --hover-color: hsl(0, 0%, 0%);
+
 }
 
 *{
@@ -11,60 +12,96 @@ html {
   padding: 0;
   box-sizing: inherit;
 }
-.container {
-  width: 60vw;
-  margin: 15px auto;
-  padding: 10px;
-}
 
-.container .nav {
-  background-image: linear-gradient(0,var(--light-color)1%, var(--prim-color));
+header {
+  background-image: linear-gradient(0,var(--prim-color), var(--light-color));
   margin-bottom: 1em;
 }
-.container .nav a{
+header a{
   text-decoration: none;
   color: var(--text-color);
 }
 
+.container {
+  width: 1200px;
+  margin: 15px auto;
+  padding: 10px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.img-hero {
+  width: 100%;
+  height: auto;
+}
+
 .title {
-  margin-bottom: 0.5em;
+
   margin-top: 0.5em;
   color: var(--text-color);
 }
 
 .cards-container{
-  list-style: none;
+  list-style-type: none;
+
 }
 
 .card{
   display: inline-block;
-  margin-right: 2em;
-  margin-bottom: 2em;
-  
-
+  width: 350px;
+  height: 500px;
   text-align: center;
+  margin-right: 2em;
+  margin-top: 2em;
+  margin: 2em 2em 2em 0;
+  vertical-align: top;
   background-image: linear-gradient(var(--prim-color), var(--light-color));
-  padding: 1em;
-
+  border: 1px solid white;
+  border-radius: 15px;
 }
 
+.card img {
+  width: 98%;
+  height: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
 .card a {
   color: var(--text-color);
   text-decoration: none; 
   display: inline-block;
-  margin-top: 0.2em;
-
 }
+.card p {
+  text-align: left;
+  margin-top: 0.5em;
+  line-height: 1.5em;
+}
+
+.card button {
+  display: block;
+  margin: 30px auto;
+  padding: 15px 50px;
+  border-radius: 25px;
+  border-color: var(--text-color);
+  background-color: hsl(0, 0%, 100%);
+  font-size: 1.2em;
+}
+
+.card button:hover {
+  background-color: var(--prim-color);
+  border-color:  var(--prim-color);
+}
+
 
 .card:hover {
-  outline: 0.2px solid black;
-  color: var(--hover-color);
+border: 3px solid var(--prim-color);
 }
 
+
 footer {
-  background-image: linear-gradient(0,var(--prim-color)1%, var(--light-color));
+  background-image: linear-gradient(var(--prim-color), var(--light-color));
   color: var(--text-color);
   margin-top: 1em;
+  font-size: 1em;
   
 }
 .footer-about, .footer-address, .footer-contact {
@@ -108,6 +145,11 @@ footer {
   display: block;
   margin-bottom: 0.5em;
   text-align: left;
+}
+
+.footer-about .copy-right {
+  display: block;
+  margin-top: 40px;
 }
 
 

@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./style/main.css">
 
   <title>Odin Recipes</title>
@@ -13,75 +19,87 @@
 <body>
 
   <header>
-    <a href="./">
-      <img src="./assets/images/chef-odin-180w.png" alt="odin logo" height="79">
-    </a>
+    <div class="container">
+      <a href="./">
+        <img src="./assets/images/chef-odin-180w.png" alt="odin logo" height="79">
+      </a>
+    </div>
   </header>
-  <div class="container">
-    <img srcset="./assets/images/hero-image-360w.webp 360w,
+
+  <main>
+    <div class="container">
+      <img srcset="./assets/images/hero-image-360w.webp 360w,
               ./assets/images/hero-image-750w.webp 750w" sizes="(max-width: 400px) 360px, 750px"
-      src="./assets/images/hero-image-750w.webp" alt="A steak is cooking in a skillet on a wooden table" height="500px"
-      class="img-hero">
+        src="./assets/images/hero-image-750w.webp" alt="A steak is cooking in a skillet on a wooden table"
+        height="500px" class="img-hero">
 
-    <h1 class="title">Odin Recipes</h1>
+      <h1 class="title">Odin Recipes</h1>
 
-    <ul class="cards-container">
-      <li class="card">
-        <img src="./assets/images/tartufo-360w.webp" height="150" alt="Tartufo">
-        <h2>
-           <a href="./recipes/tartufo/">Tartufo</a>
-        </h2>
-        <p>Tartufo is a classic Italian dessert that you can make at home. It requires some patience as there is freezing time involved. Rolling. in pistachio and cookie crumbs is extra delicious.</p>
-        <button> <a href="./recipes/tartufo/">Read More</a></button>
-      </li>
+      <ul class="cards-container">
+        <li class="card">
+          <img src="./assets/images/tartufo-360w.webp" height="150" alt="Tartufo">
+          <h2>
+            <a href="./recipes/tartufo/">Tartufo</a>
+          </h2>
+          <p>Tartufo is a classic Italian dessert that you can make at home. It requires some patience as there is
+            freezing time involved. Rolling. in pistachio and cookie crumbs is extra delicious.</p>
+          <a class="card-btn" href="./recipes/tartufo/">Read More</a>
+        </li>
 
-      <li class="card">
+        <li class="card">
 
-        <img src="./assets/images/r-avocado-360w.webp" height="150" alt="Capress Stuffed Avocado">
-        <h2><a href="./recipes/caprese-stuffed-avocado/">Capress Stuffed Avocado</a>
-        </h2>
-        <p>This Caprese stuffed avocado salad is made up of avocado halves, filled with a simple Caprese salad using cherry tomatoes, mozzarella pearls, and basil, and drizzled with balsamic vinegar.</p>
-        <button><a href="./recipes/caprese-stuffed-avocado/">Read More</a></button>
-      </li>
+          <img src="./assets/images/r-avocado-360w.webp" height="150" alt="Capress Stuffed Avocado">
+          <h2><a href="./recipes/caprese-stuffed-avocado/">Capress Stuffed Avocado</a>
+          </h2>
+          <p>This Caprese stuffed avocado salad is made up of avocado halves, filled with a simple Caprese salad using
+            mozzarella pearls, and basil, and drizzled with balsamic vinegar.</p>
+          <a class="card-btn" href="./recipes/caprese-stuffed-avocado/">Read More</a>
+        </li>
 
-      <li class="card">
-        <img src="./assets/images/chicken-rice-360w.webp" height="150" alt="Lemon Chicken rice">
-        <h2><a href="./recipes/lemon-chicken-and-rice-casserole/">Lemon Chicken and Rice Casserole</a>
-        </h2>
-        <p>Casseroles never disappoint. They are filling, hearty, and can last you several meals if you’re cooking for yourself or a few others.</p>
-        <button><a href="./recipes/lemon-chicken-and-rice-casserole/">Read More</a></button>
-      </li>
+        <li class="card right-item">
+          <img src="./assets/images/chicken-rice-360w.webp" height="150" alt="Lemon Chicken rice">
+          <h2><a href="./recipes/lemon-chicken-and-rice-casserole/">Lemon Chicken and Rice Casserole</a>
+          </h2>
+          <p>Casseroles never disappoint. They are filling, hearty, and can last you several meals if you’re cooking for
+            yourself or a few others. </p>
+          <a class="card-btn" href="./recipes/lemon-chicken-and-rice-casserole/">Read More</a>
+        </li>
 
-    </ul>
-  </div>
-
+      </ul>
+    </div>
+  </main>
 
   <footer>
-    <div class="footer-about">
+    <div class="container">
+      <div class="footer-about">
 
-      <p><cite>
-          Recipes Website
-        </cite> made it by MH'D </p>
-        <p class="copy-right">© 2024 Odin Recipes. All rights reserved.</p>
+        <p><cite>
+            Chef Odin
+          </cite> made by Mohammad </p>
+        <p class="copy-right">© 2024 Chef Odin. All rights reserved.</p>
 
-    </div>
+      </div>
 
-    <div class="footer-address">
-      <p>address:</p>
-      <address>2702 - 7895 Jane street Zahle, Lebanon </address>
-    
-    </div>
+      <div class="footer-location">
+        <p>Location:</p>
+        <address>2702 - 7895 Jane street Zahle, Lebanon </address>
 
-    <div class="footer-contact">
-      <p>Contact us:</p>
-      <address>
-        <a href="mailto:kenaan.odin@outlook.com">kenaan.odin@outlook.com</a>
-        <a href="tel:+1 (123) 000-1212">tel:+1 (123) 000-1212</a>
-        <img src="./assets/images/facebook-app-symbol.png" height="24db" alt="">
-        <img src="./assets/images/instagram.png" alt="" height="24db">
-      </address>
+      </div>
+
+      <div class="footer-contact">
+        <p>Contact us:</p>
+        <address>
+          <a href="mailto:kenaan.odin@outlook.com">kenaan.odin@outlook.com</a>
+          <a href="tel:+1 (123) 000-1212">tel:+1 (123) 000-1212</a>
+          <a href="https://www.facebook.com/" class="icon" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/" class="icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+        </address>
+      </div>
     </div>
   </footer>
+
+
 </body>
 
 </html>

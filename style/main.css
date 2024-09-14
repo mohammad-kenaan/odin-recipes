@@ -1,10 +1,10 @@
 html {
   box-sizing: border-box;
-  --prim-color: hsl(192, 24%, 96%);
+  --prim-color: hsl(180, 20%, 95%);
   --light-color:  hsl(0, 0%, 100%);
-  --text-color:  linear-gradient(var(--prim-color), black);
-  --hover-color: hsl(0, 0%, 0%);
-
+  --text-color: hsl(0, 14%, 22%);
+  --hover-color: hsl(204, 33%, 43%);
+  font-family:"Roboto", Arial, Helvetica, sans-serif;
 }
 
 *{
@@ -15,55 +15,47 @@ html {
 
 header {
   background-image: linear-gradient(0,var(--prim-color), var(--light-color));
-  margin-bottom: 1em;
-}
-header a{
-  text-decoration: none;
-  color: var(--text-color);
-}
 
+}
 .container {
-  width: 1200px;
-  margin: 15px auto;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 10px;
-  font-family:Arial, Helvetica, sans-serif;
+
 }
 
 .img-hero {
   width: 100%;
   height: auto;
 }
-
 .title {
-
   margin-top: 0.5em;
   color: var(--text-color);
 }
 
 .cards-container{
   list-style-type: none;
-
 }
-
-.card{
+.cards-container .card{
   display: inline-block;
-  width: 350px;
-  height: 500px;
+  width: 369px;
+  height: 550px;
   text-align: center;
-  margin-right: 2em;
-  margin-top: 2em;
   margin: 2em 2em 2em 0;
   vertical-align: top;
-  background-image: linear-gradient(var(--prim-color), var(--light-color));
   border: 1px solid white;
   border-radius: 15px;
+  background-color: var(--prim-color);
 }
-
+.card.right-item {
+  margin-right: 0;
+}
 .card img {
-  width: 98%;
+  width: 100%;
   height: auto;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  margin-bottom: 1em;
 }
 .card a {
   color: var(--text-color);
@@ -72,73 +64,70 @@ header a{
 }
 .card p {
   text-align: left;
-  margin-top: 0.5em;
+  padding: 1em;
   line-height: 1.5em;
+  color: var(--text-color);
 }
-
-.card button {
+.card .card-btn {
   display: block;
-  margin: 30px auto;
+  width: 75%;
+  margin: 1em auto;
   padding: 15px 50px;
   border-radius: 25px;
   border-color: var(--text-color);
   background-color: hsl(0, 0%, 100%);
   font-size: 1.2em;
 }
-
-.card button:hover {
-  background-color: var(--prim-color);
-  border-color:  var(--prim-color);
+.card .card-btn:hover {
+  color: var(--hover-color);
 }
-
-
 .card:hover {
-border: 3px solid var(--prim-color);
+border: 0.5px solid hsl(202, 100%, 85%);
 }
 
 
 footer {
   background-image: linear-gradient(var(--prim-color), var(--light-color));
   color: var(--text-color);
-  margin-top: 1em;
+  line-height: 1.7em;
   font-size: 1em;
   
 }
-.footer-about, .footer-address, .footer-contact {
+.footer-about, .footer-location, .footer-contact {
+  margin-right: 2em;
   padding: 1em;
 }
-
 .footer-about {
   display: inline-block;
-  margin: 0 2em 2em 0;
-  width: 30%;
+  width: 369px;
   vertical-align:top;
 }
 .footer-about p {
   display: inline;
 }
+.footer-about .copy-right {
+  display: block;
+  margin-top: 40px;
+}
 
-.footer-address {
+.footer-location {
   display: inline-block;
   text-align: left;
-  margin-bottom: 2em;
   vertical-align:top;
-  width: 30%;
+  width: 369px;
 }
 
 .footer-contact {
   display: inline-block;
   text-align: left;
-  margin-right: 2em;
-  margin-bottom: 2em;
-  width: 30%;
+  width: 369px;
+  margin-right: 0;
 }
 .footer-contact address {
   display: inline-block;
   margin-right: 2em;
   
 }
-
 .footer-contact a {
   color: var(--text-color);
   text-decoration: none;
@@ -146,11 +135,29 @@ footer {
   margin-bottom: 0.5em;
   text-align: left;
 }
-
-.footer-about .copy-right {
-  display: block;
-  margin-top: 40px;
+a.icon {
+  margin-right: 1em;
+  font-size: 2em;
+  display: inline;
+  
 }
 
+.section-1, .section-2, .section-3 {
+  margin: 1em 0;
+  border: 1px solid rgb(224, 220, 220);
+}
+.section-1 h2, .section-2 h2, .section-3 h2 {
+  padding: 16px;
+  background-color: hsl(0, 12%, 96%);
+}
+.section-1 p, .section-2 p, .section-3 p{
+  line-height: 1.5em;
+  padding: 1em;
+}
+.section-2 ul, .section-3 ol{
+  list-style-position: inside;
+  line-height: 1.5em;
+  padding: 1em;
+}
 
 

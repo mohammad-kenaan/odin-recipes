@@ -21,7 +21,13 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px;
-
+}
+.container .home-icone i {
+  font-size: 3em;
+  color: rgb(85, 85, 85);
+  vertical-align: top;
+  margin-top: 0.3em;
+  margin-left: 55%;
 }
 
 .img-hero {
@@ -142,6 +148,32 @@ a.icon {
   
 }
 
+.section-0 picture {
+  width: 70%;
+  display: inline-block;
+  margin-right: 6em;
+}
+
+aside {
+  display: inline-block;
+  border-left: 2.5px solid gray;
+  padding: 2em;
+  vertical-align: top;
+  margin: 2em 0;
+  background-image: linear-gradient(var(--prim-color), var(--light-color));
+}
+aside ul {
+  list-style: none;
+ 
+}
+aside h2 {
+  margin-bottom: 0.7em;
+}
+aside li a { 
+  text-decoration: none;
+  color: var(--text-color);
+  line-height: 2em;
+}
 .section-1, .section-2, .section-3 {
   margin: 1em 0;
   border: 1px solid rgb(224, 220, 220);
@@ -159,5 +191,3 @@ a.icon {
   line-height: 1.5em;
   padding: 1em;
 }
-
-

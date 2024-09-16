@@ -22,13 +22,6 @@ header {
   margin: 0 auto;
   padding: 10px;
 }
-.container .home-icone i {
-  font-size: 3em;
-  color: rgb(85, 85, 85);
-  vertical-align: top;
-  margin-top: 0.3em;
-  margin-left: 55%;
-}
 
 .img-hero {
   width: 100%;
@@ -91,7 +84,6 @@ header {
 border: 0.5px solid hsl(202, 100%, 85%);
 }
 
-
 footer {
   background-image: linear-gradient(var(--prim-color), var(--light-color));
   color: var(--text-color);
@@ -148,46 +140,68 @@ a.icon {
   
 }
 
-.section-0 picture {
-  width: 70%;
+article .container {
   display: inline-block;
-  margin-right: 6em;
+
+}
+h1.header-recipe {
+  margin: 1em 0;
+}
+
+.description, .ingredients, .steps {
+  border: 1px solid rgb(224, 220, 220);
+  max-width: 80ch;
+}
+.description h2, .ingredients h2, .steps h2 {
+  padding: 16px;
+  background-color: hsl(0, 12%, 96%);
+}
+.description p, .ingredients p, .steps p{
+  line-height: 1.5em;
+  padding: 1em;
+}
+.ingredients {
+  margin: 1em 0;
+}
+.ingredients ul, .steps ol{
+  list-style-position: inside;
+  line-height: 1.5em;
+  padding: 1em;
 }
 
 aside {
   display: inline-block;
-  border-left: 2.5px solid gray;
-  padding: 2em;
   vertical-align: top;
-  margin: 2em 0;
-  background-image: linear-gradient(var(--prim-color), var(--light-color));
+  margin: 2em 4em;
 }
-aside ul {
+
+aside ul{
   list-style: none;
- 
 }
-aside h2 {
-  margin-bottom: 0.7em;
+aside ul .aside-item {
+  width: 300px;
+  height: 200px;
 }
-aside li a { 
+
+aside ul .aside-item a{
+  border-radius: 25px;
+  background-color: hsl(0 0% 100% / .6);
   text-decoration: none;
-  color: var(--text-color);
-  line-height: 2em;
+  color: rgb(15, 15, 15);
+  padding: 1em 4em;
+  display: inline-block;
+  margin-top: 9em ;
+  margin-left: 4em;
 }
-.section-1, .section-2, .section-3 {
+
+.first-item {
+  background-image: url(../assets/images/hero-image-360w.webp);
+  margin-top: 3em;
+}
+.second-item {
+  background-image: url(../assets/images/chicken-rice-360w.webp);
   margin: 1em 0;
-  border: 1px solid rgb(224, 220, 220);
 }
-.section-1 h2, .section-2 h2, .section-3 h2 {
-  padding: 16px;
-  background-color: hsl(0, 12%, 96%);
-}
-.section-1 p, .section-2 p, .section-3 p{
-  line-height: 1.5em;
-  padding: 1em;
-}
-.section-2 ul, .section-3 ol{
-  list-style-position: inside;
-  line-height: 1.5em;
-  padding: 1em;
+.third-item {
+  background-image: url(../assets/images/tartufo-360w.webp);
 }

@@ -15,12 +15,34 @@ html {
 
 header {
   background-image: linear-gradient(0,var(--prim-color), var(--light-color));
-
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px;
+}
+
+header .container .logo {
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+}
+header .container nav{
+  display: inline-block;
+  width: 69%;
+  height: 100%;
+  text-align: right;
+  vertical-align: middle;
+
+}
+header .container nav menu li {
+  display: inline-block;
+}
+header .container nav menu li a{
+  text-decoration: none;
+  margin-left: 1em;
+  color: var(--text-color);
+  font-size: 1.2em;
 }
 
 .img-hero {
@@ -38,7 +60,6 @@ header {
 .cards-container .card{
   display: inline-block;
   width: 369px;
-  height: 550px;
   text-align: center;
   margin: 2em 2em 2em 0;
   vertical-align: top;
@@ -54,7 +75,9 @@ header {
   height: auto;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  margin-bottom: 1em;
+}
+.card .card-content {
+  padding: 1em;
 }
 .card a {
   color: var(--text-color);
@@ -63,14 +86,14 @@ header {
 }
 .card p {
   text-align: left;
-  padding: 1em;
+  margin-top: 1em;
   line-height: 1.5em;
   color: var(--text-color);
 }
 .card .card-btn {
   display: block;
   width: 75%;
-  margin: 1em auto;
+  margin: 1em auto 0;
   padding: 15px 50px;
   border-radius: 25px;
   border-color: var(--text-color);
@@ -142,7 +165,8 @@ a.icon {
 
 article .container {
   display: inline-block;
-
+  font-size: 1.2em;
+  margin-right: 1.36em;
 }
 h1.header-recipe {
   margin: 1em 0;
@@ -172,14 +196,19 @@ h1.header-recipe {
 aside {
   display: inline-block;
   vertical-align: top;
-  margin: 2em 4em;
+  margin: 2em 0;
+  width: 22.7%;
+  text-align: right;
 }
 
 aside ul{
   list-style: none;
+  display: inline-block;
+}
+aside ul h2 {
+  text-align: center;
 }
 aside ul .aside-item {
-  width: 300px;
   height: 200px;
 }
 
@@ -191,11 +220,12 @@ aside ul .aside-item a{
   padding: 1em 4em;
   display: inline-block;
   margin-top: 9em ;
-  margin-left: 4em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
 
 .first-item {
-  background-image: url(../assets/images/hero-image-360w.webp);
+  background-image: url(../assets/images/creamy-chicken-360w.webp);
   margin-top: 3em;
 }
 .second-item {
